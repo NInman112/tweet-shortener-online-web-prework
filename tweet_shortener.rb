@@ -12,7 +12,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.split.collect do |subs|
+  tweet.split.map do |subs|
   if dictionary.keys.include?(subs.downcase)
     subs = dictionary(subs)
   else
