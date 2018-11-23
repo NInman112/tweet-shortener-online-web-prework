@@ -8,6 +8,7 @@ def dictionary
     "you" => "u",
     "at" => "@",
     "and" => "&"
+  }
 end
 
 def word_substituter(tweet)
