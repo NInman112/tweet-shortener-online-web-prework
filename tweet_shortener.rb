@@ -14,7 +14,7 @@ end
 def word_substituter(tweet)
   tweet.split.map do |subs|
   if dictionary.keys.include?(subs.downcase)
-    subs = dictionary[subs]
+    subs = dictionary[subs.downcase]
   else
     subs
   end
@@ -23,6 +23,6 @@ end
 
 def bulk_tweet_shortener(tweet)
   tweet.each do |tweeter|
-    puts word_substituter(tweeter.downcase)
+    puts word_substituter(tweeter)
   end
 end
