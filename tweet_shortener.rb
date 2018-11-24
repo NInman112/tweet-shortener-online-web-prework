@@ -23,6 +23,6 @@ end
 
 def bulk_tweet_shortener(tweet)
   tweet.each do |tweeter|
-    puts word_substituter(tweeter)
+    puts word_substituter(tweeter.downcase)
   end
 end
